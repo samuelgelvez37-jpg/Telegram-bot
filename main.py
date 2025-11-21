@@ -6,10 +6,10 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 # ============================
 # CONFIG DESDE VARIABLES ENTORNO (Render)
 # ============================
-TOKEN = os.getenv("8415374580:AAEpnVwlX2cmI6MK18wdRcZ3vwzMFoR9454")
-GROUP_ID = os.getenv("-5031243712")
-CHANNEL_ID = os.getenv("-5031243712")
-OWNER_ID = os.getenv("8471103011")  # Tu ID de Telegram autorizado para controlar el bot
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+GROUP_ID = os.getenv("GROUP_ID")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
+OWNER_ID = os.getenv("OWNER_ID")  # Tu ID de Telegram autorizado para controlar el bot
 
 if not TOKEN or not GROUP_ID or not CHANNEL_ID or not OWNER_ID:
     raise ValueError("Faltan variables de entorno necesarias")
